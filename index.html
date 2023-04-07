@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprimir Estrellas</title>
+</head>
+<body>
+    
+<h1>PROGRAMA IMPRESIÓN DE ESTRELLAS</h1>
+
+<script>
+
+    function saltarLinea() {
+        document.write("<br>");    
+        document.write("<br>");    
+        document.write("<br>");    
+    }  
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    let filas = prompt("Ingrese el número de filas: ");
+    let columnas = prompt("Ingrese el número de columnas: ");
+
+    for (i=0; i < filas; i++){
+        for (j=0; j < columnas; j++){
+            document.write("*");
+        }
+        saltarLinea();
+    }
+    imprimir("FIN")
+</script>
+</body>
+</html>
